@@ -13,3 +13,4 @@ npm install
 
 If you are someone from Nussbaum and interested in details feel free to contact me. 
 
+To use your credentials create an `.env` file according to the sample `.env.sample`.

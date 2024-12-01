@@ -11,5 +11,8 @@
     "@playwright/test": "^1.49.0",
     "@types/node": "^22.9.3",
     "prettier": "^3.3.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
   }
 }
