@@ -6,7 +6,8 @@ test("download blaettle from lokalmatador", async ({ page }) => {
   await page.goto(
     "https://www.nussbaum.de/kiosk/mitteilungsblaetter/amtsblatt-renningen",
   );
-  await page.getByTestId("uc-deny-all-button").click();
+  
+  await page.getByLabel('Alles Ablehnen').click();
   await page.getByTestId("web-issue-download-button").click();
   await page.getByRole('button', { name: 'Anmelden oder Konto erstellen' }).click();
   await page.getByPlaceholder("E-Mail-Adresse").fill(process.env.USERNAME as string);
